@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Analisador de Sequência de 20 Números</h1>
+    <p>Digite 20 números entre 0 e 100:</p>
+    <input type="number" id="numero" min="0" max="100">
+    <button onclick="adicionarNumero()">Adicionar</button>
+    <button onclick="analisar()">Analisar</button>
+    <p id="status"></p>
+
+    <div id="resultado"></div>
+
+    <div class="chart-container">
+        <h3>Gráfico de Repetições</h3>
+        <canvas id="graficoBarras"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h3>Gráfico de Porcentagem (Soma Repetidos)</h3>
+        <canvas id="graficoPizza"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
